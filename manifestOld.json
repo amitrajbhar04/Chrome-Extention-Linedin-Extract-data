@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "ElineHR Extention",
+    "version": "1.0",
+    "description": "Read LinkedIn profile data",
+    "permissions": [
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://www.linkedin.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.linkedin.com/in/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
